@@ -47,9 +47,12 @@ fs.readFile('error.log', function (err, data) {
             'logtime': time,
             'message': message
         };
-        connection.query('INSERT INTO logs SET ?', array, function (err, result) {});
+        connection.query('INSERT INTO logs SET ?', array, function (err, result) {
+            if (err) throw err;
+        });
     }
-    process.exit(code = 0);
+    selectData();
+    //process.exit(code = 0);
 });
 
 console.log('BEGIN INSERT');
