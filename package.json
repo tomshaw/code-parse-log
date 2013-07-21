@@ -1,0 +1,14 @@
+{
+  "author": "Tom Shaw",
+  "name": "code-parse-log",
+  "description": "A quick node app to parse some simple log file data and store the info in a MYSQL database.",
+  "version": "0.1.0",
+  "main": "app.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "mysql": "x"
+  },
+  "optionalDependencies": {}
+}
